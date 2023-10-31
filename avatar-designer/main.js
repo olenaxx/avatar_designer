@@ -2,9 +2,6 @@ const inputRange = document.querySelector('.input-range')
 const inputColor = document.querySelector('.input-color')
 const avatarImage = document.querySelector('.avatar')
 
-avatarImage.style.border = "4px solid #FF851B"
-avatarImage.style.borderRadius = "50px"
-
 
 inputRange.addEventListener("change", (e) => {
   const rangeValue = e.currentTarget.value
