@@ -114,15 +114,35 @@ img {
   letter-spacing: 0em;
   color: #ffffff;
   cursor: pointer;
+  transition: .4s;
 }
 
 .button:hover {
-  filter: brightness(90%)
+  background: #2c658b;
 }
 
 .input-file-box {
-  display: flex;
-  justify-content: center;
+  padding-top: 10px;
+}
+
+.input-file {
+  opacity: 0;
+  z-index: -1;
+}
+
+.input-file-lable {
+  display: block;
+  margin: 0 auto;
+  width: 214px;
+  padding: 10px;
+  background: #3498DB;
+  border-radius: 4px;
+  color: #ffffff; 
+  transition: .4s;
+}
+
+.input-file-lable:hover {
+  background: #2c658b;
 }
 
 .input {
