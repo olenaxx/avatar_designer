@@ -33,13 +33,15 @@
         <div class="container avatar-designer-container">
           <h1 class="title">Avatar designer</h1>
           <p class="text">Upload your image or try one of the provided options:</p>
-          <img class="avatar" src="./assets/squirrel-1.jpg" alt="squirrel">
-          <!-- <img class="designer__avatar" src="./assets/squirrel-2.jpg" alt="squirrel"> -->
-          <!-- <img class="designer__avatar" src="./assets/squirrel-3.jpg" alt="squirrel"> -->
+          <div class="images-box">
+            <img class="avatar" src="./assets/squirrel-1.jpeg" alt="squirrel">
+            <img class="avatar avatar-none" src="./assets/squirrel-2.jpeg" alt="squirrel">
+            <img class="avatar avatar-none" src="./assets/squirrel-3.jpeg" alt="squirrel">
+          </div>
           <div class="button-box">
-            <button class="button">Image 1</button>
-            <button class="button">Image 2</button>
-            <button class="button">Image 3</button>
+            <button data-image="./assets/squirrel-1.jpeg" class="button">Image 1</button>
+            <button data-image="./assets/squirrel-2.jpeg" class="button">Image 2</button>
+            <button data-image="./assets/squirrel-3.jpeg" class="button">Image 3</button>
           </div>
           <p class="text input-text">Adjust border radius:</p>
             <input class="input input-range" type="range" id="input-range" min="0" max="100" value="20">
