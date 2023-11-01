@@ -4,6 +4,7 @@ const avatarImage = document.querySelector('.avatar')
 const avatarImages = document.querySelectorAll('.avatar')
 const buttons = document.querySelectorAll('.button')
 const inputFile = document.querySelector('.input-file')
+const inputRangeSize = document.querySelector('.input-range-size')
 
 
 // Add an event listener to the border radius slider and set the value
@@ -53,4 +54,9 @@ inputFile.addEventListener('change', (e) => {
   }
 })
 
-
+// additional slider to control the image size
+inputRangeSize.addEventListener('change', (e) => {
+  const imageSize = e.currentTarget.value;
+  avatarImage.style.width = imageSize + "px"
+  avatarImage.style.height = imageSize + "px"
+})

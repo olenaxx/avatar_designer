@@ -79,7 +79,6 @@ img {
 }
 
 .avatar {
-  /* width: 200px; */
   margin-top: 28px;
   margin-bottom: 25px;
   margin-left: auto;
@@ -156,5 +155,11 @@ img {
   padding-bottom: 10px;
 }
 
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 

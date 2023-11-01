@@ -36,7 +36,7 @@
           <div class="images-box">
             <img class="avatar" src="./assets/squirrel-1.jpeg" alt="squirrel">
             <img class="avatar avatar-none" src="./assets/squirrel-2.jpeg" alt="squirrel">
-            <img class="avatar avatar-none" src="./assets/fox.jpg" alt="squirrel">
+            <img class="avatar avatar-none" src="./assets/fox.jpg" alt="fox">
           </div>
           <div class="button-box">
             <button data-image="./assets/squirrel-1.jpeg" class="button">Image 1</button>
@@ -47,10 +47,18 @@
             <label class="input-file-lable" for="uploadButton">Choose file</label>
             <input class="input-file" type="file" accept="image/*" id="uploadButton">
           </div>
-          <p class="text input-text">Adjust border radius:</p>
-            <input class="input input-range" type="range" id="input-range" min="0" max="100" value="20">
-          <p class="text input-text">Choose border color:</p>
-            <input class="input input-color" type="color" value="#FF851B">
+          <div class="input-box">
+            <lable class="text input-text" for="input-range">Adjust border radius:</lable>
+            <input class="input input-range" type="range" id="input-range" min="0" max="100" value="20" id="input-range">
+          </div>
+          <div class="input-box">
+            <lable class="text input-text" for="input-color">Choose border color:</lable>
+            <input class="input input-color" type="color" value="#FF851B" id="input-color">
+          </div>
+          <div class="input-box">
+            <label class="text input-text" for="image-size">Resize the avatar:</label>
+            <input class="input-range-size" type="range" id="image-size" min="100" max="200" value="128">
+          </div>
         </div>
       </section>
     </main>
