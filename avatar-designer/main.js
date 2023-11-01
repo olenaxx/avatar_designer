@@ -3,6 +3,8 @@ const inputColor = document.querySelector('.input-color')
 const avatarImage = document.querySelector('.avatar')
 const avatarImages = document.querySelectorAll('.avatar')
 const buttons = document.querySelectorAll('.button')
+const inputFile = document.querySelector('.input-file')
+
 
 // Add an event listener to the border radius slider and set the value
 inputRange.addEventListener("change", (e) => {
@@ -30,3 +32,25 @@ buttons.forEach(btn => {
   })
 
 })
+
+
+// Implement the file upload
+inputFile.addEventListener('change', (e) => {
+  const selectedFile = e.currentTarget.files[0]
+  console.log(e.currentTarget.files[0]);
+
+  if (selectedFile) {
+
+    const reader = new FileReader();
+    reader.readAsDataURL(selectedFile);
+    reader.addEventListener('load', () => {
+      avatarImage.src = reader.result;
+    })
+  } else {
+    alert('Please select a valid image file.');
+    // Reset the file input
+    inputFile.value = '';
+  }
+})
+
+

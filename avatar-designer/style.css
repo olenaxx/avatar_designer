@@ -30,6 +30,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
 }
 
 .header {
@@ -75,7 +79,7 @@ img {
 }
 
 .avatar {
-  width: 200px;
+  /* width: 200px; */
   margin-top: 28px;
   margin-bottom: 25px;
   margin-left: auto;
@@ -114,6 +118,11 @@ img {
 
 .button:hover {
   filter: brightness(90%)
+}
+
+.input-file-box {
+  display: flex;
+  justify-content: center;
 }
 
 .input {
